@@ -17,11 +17,10 @@ public class ApiTest {
     }
 
     public void test(UserVO userVO) {
-        UserDTO userDTO = UserDTO.builder()
-                .userId(userVO.getUserId())
-                .userName(userVO.getUserName())
-                .userAge(userVO.getUserAge())
-                .build();
+        UserDTO userDTO = new UserDTO();
+        userDTO.setUserId(userVO.getUserId());
+        userDTO.setUserName(userVO.getUserName());
+        userDTO.setUserAge(userVO.getUserAge());
     }
 
 }
