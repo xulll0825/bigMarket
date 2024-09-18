@@ -1,0 +1,1 @@
+docker stop lfg_big_market
